@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221004 16:01:31.245" rpa="false" schemaversion="3">
+<suite id="s1" name="Webtesting Automation" source="C:\automation testing projects\webtesting automation">
+<suite id="s1-s1" name="Testcases" source="C:\automation testing projects\webtesting automation\testcases">
+<suite id="s1-s1-s1" name="Logincredentialtest" source="C:\automation testing projects\webtesting automation\testcases\logincredentialtest.robot">
+<test id="s1-s1-s1-t1" name="compleate_login" line="13">
+<kw name="start" library="start_stop" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${demoshow_loginpage}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221004 16:01:32.113" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<status status="PASS" starttime="20221004 16:01:32.113" endtime="20221004 16:01:36.578"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221004 16:01:36.580" endtime="20221004 16:01:36.588"/>
+</kw>
+<status status="PASS" starttime="20221004 16:01:32.112" endtime="20221004 16:01:36.589"/>
+</kw>
+<kw name="complete_login">
+<arg>firstdemo@email.co</arg>
+<arg>12345qwerty</arg>
+<arg> No customer account found </arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_email}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 16:01:36.597" level="INFO">Typing text 'firstdemo@email.co' into text field 'xpath://input[@id='Email']'.</msg>
+<status status="PASS" starttime="20221004 16:01:36.594" endtime="20221004 16:01:36.684"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 16:01:36.686" level="INFO">Typing text '12345qwerty' into text field 'xpath://input[@name='Password']'.</msg>
+<status status="PASS" starttime="20221004 16:01:36.684" endtime="20221004 16:01:36.762"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${loginpage_login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221004 16:01:36.764" level="INFO">Clicking element 'xpath://input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20221004 16:01:36.763" endtime="20221004 16:01:37.269"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221004 16:01:38.279" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221004 16:01:37.269" endtime="20221004 16:01:38.282"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${error_update}</arg>
+<arg>${error_message}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221004 16:01:38.455" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221004 16:01:38.457" level="FAIL">Element 'xpath:/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[1]/div' should have contained text ' No customer account found ' but its text was 'Login was unsuccessful. Please correct the errors and try again.
+No customer account found'.</msg>
+<status status="FAIL" starttime="20221004 16:01:38.282" endtime="20221004 16:01:38.459"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:01:36.592" endtime="20221004 16:01:38.460"/>
+</kw>
+<kw name="stop" library="start_stop" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221004 16:01:38.461" endtime="20221004 16:01:40.630"/>
+</kw>
+<status status="PASS" starttime="20221004 16:01:38.461" endtime="20221004 16:01:40.632"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:01:32.109" endtime="20221004 16:01:40.635">Element 'xpath:/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[1]/div' should have contained text ' No customer account found ' but its text was 'Login was unsuccessful. Please correct the errors and try again.
+No customer account found'.</status>
+</test>
+<test id="s1-s1-s1-t2" name="compleate_login" line="13">
+<kw name="start" library="start_stop" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${demoshow_loginpage}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221004 16:01:40.659" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<status status="PASS" starttime="20221004 16:01:40.658" endtime="20221004 16:01:44.945"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221004 16:01:44.947" endtime="20221004 16:01:44.951"/>
+</kw>
+<status status="PASS" starttime="20221004 16:01:40.657" endtime="20221004 16:01:44.952"/>
+</kw>
+<kw name="complete_login">
+<arg>second@email.com</arg>
+<arg>The credentials provided are incorrect</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_email}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 16:01:44.955" level="INFO">Typing text 'second@email.com' into text field 'xpath://input[@id='Email']'.</msg>
+<status status="PASS" starttime="20221004 16:01:44.954" endtime="20221004 16:01:45.035"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 16:01:45.036" level="INFO">Typing text '' into text field 'xpath://input[@name='Password']'.</msg>
+<status status="PASS" starttime="20221004 16:01:45.035" endtime="20221004 16:01:45.105"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${loginpage_login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221004 16:01:45.106" level="INFO">Clicking element 'xpath://input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20221004 16:01:45.105" endtime="20221004 16:01:45.632"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221004 16:01:46.645" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221004 16:01:45.633" endtime="20221004 16:01:46.648"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${error_update}</arg>
+<arg>${error_message}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221004 16:02:07.553" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<msg timestamp="20221004 16:02:07.559" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<status status="FAIL" starttime="20221004 16:01:46.648" endtime="20221004 16:02:07.565"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:01:44.953" endtime="20221004 16:02:07.566"/>
+</kw>
+<kw name="stop" library="start_stop" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221004 16:02:07.569" endtime="20221004 16:02:09.650"/>
+</kw>
+<status status="PASS" starttime="20221004 16:02:07.568" endtime="20221004 16:02:09.651"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:01:40.651" endtime="20221004 16:02:09.654">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+</status>
+</test>
+<test id="s1-s1-s1-t3" name="compleate_login" line="13">
+<kw name="start" library="start_stop" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${demoshow_loginpage}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221004 16:02:09.677" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<status status="PASS" starttime="20221004 16:02:09.676" endtime="20221004 16:02:13.193"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221004 16:02:13.193" endtime="20221004 16:02:13.196"/>
+</kw>
+<status status="PASS" starttime="20221004 16:02:09.675" endtime="20221004 16:02:13.197"/>
+</kw>
+<kw name="complete_login">
+<arg>thirddemo@email.com</arg>
+<arg>qwerty</arg>
+<arg>Login was unsuccessful</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_email}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 16:02:13.201" level="INFO">Typing text 'thirddemo@email.com' into text field 'xpath://input[@id='Email']'.</msg>
+<msg timestamp="20221004 16:02:13.213" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<msg timestamp="20221004 16:02:13.222" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<status status="FAIL" starttime="20221004 16:02:13.199" endtime="20221004 16:02:13.225"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:13.226" endtime="20221004 16:02:13.227"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${loginpage_login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:13.228" endtime="20221004 16:02:13.229"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:13.230" endtime="20221004 16:02:13.230"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${error_update}</arg>
+<arg>${error_message}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:13.230" endtime="20221004 16:02:13.230"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:02:13.198" endtime="20221004 16:02:13.231"/>
+</kw>
+<kw name="stop" library="start_stop" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221004 16:02:13.234" endtime="20221004 16:02:15.344"/>
+</kw>
+<status status="PASS" starttime="20221004 16:02:13.232" endtime="20221004 16:02:15.345"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:02:09.668" endtime="20221004 16:02:15.348">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</status>
+</test>
+<test id="s1-s1-s1-t4" name="compleate_login" line="13">
+<kw name="start" library="start_stop" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${demoshow_loginpage}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221004 16:02:15.365" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<status status="PASS" starttime="20221004 16:02:15.364" endtime="20221004 16:02:18.315"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221004 16:02:18.316" endtime="20221004 16:02:18.320"/>
+</kw>
+<status status="PASS" starttime="20221004 16:02:15.363" endtime="20221004 16:02:18.321"/>
+</kw>
+<kw name="complete_login">
+<arg>forthdemo@email.com</arg>
+<arg>12345QWERTY</arg>
+<arg>Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_email}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 16:02:18.324" level="INFO">Typing text 'forthdemo@email.com' into text field 'xpath://input[@id='Email']'.</msg>
+<msg timestamp="20221004 16:02:18.335" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<msg timestamp="20221004 16:02:18.345" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<status status="FAIL" starttime="20221004 16:02:18.323" endtime="20221004 16:02:18.348"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:18.349" endtime="20221004 16:02:18.350"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${loginpage_login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:18.350" endtime="20221004 16:02:18.352"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:18.352" endtime="20221004 16:02:18.353"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${error_update}</arg>
+<arg>${error_message}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:18.354" endtime="20221004 16:02:18.354"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:02:18.322" endtime="20221004 16:02:18.356"/>
+</kw>
+<kw name="stop" library="start_stop" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221004 16:02:18.359" endtime="20221004 16:02:20.465"/>
+</kw>
+<status status="PASS" starttime="20221004 16:02:18.357" endtime="20221004 16:02:20.466"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:02:15.358" endtime="20221004 16:02:20.468">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</status>
+</test>
+<test id="s1-s1-s1-t5" name="compleate_login" line="13">
+<kw name="start" library="start_stop" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${demoshow_loginpage}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221004 16:02:20.477" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<status status="PASS" starttime="20221004 16:02:20.476" endtime="20221004 16:02:23.367"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221004 16:02:23.368" endtime="20221004 16:02:23.372"/>
+</kw>
+<status status="PASS" starttime="20221004 16:02:20.476" endtime="20221004 16:02:23.373"/>
+</kw>
+<kw name="complete_login">
+<arg>fifthdemo@email.com</arg>
+<arg>!@#$%qwerty</arg>
+<arg>Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_email}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 16:02:23.378" level="INFO">Typing text 'fifthdemo@email.com' into text field 'xpath://input[@id='Email']'.</msg>
+<msg timestamp="20221004 16:02:23.398" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<msg timestamp="20221004 16:02:23.405" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<status status="FAIL" starttime="20221004 16:02:23.376" endtime="20221004 16:02:23.409"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enter_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:23.410" endtime="20221004 16:02:23.412"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${loginpage_login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:23.412" endtime="20221004 16:02:23.413"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:23.413" endtime="20221004 16:02:23.414"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${error_update}</arg>
+<arg>${error_message}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:23.415" endtime="20221004 16:02:23.417"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:02:23.375" endtime="20221004 16:02:23.418"/>
+</kw>
+<kw name="stop" library="start_stop" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221004 16:02:23.421" endtime="20221004 16:02:25.531"/>
+</kw>
+<status status="PASS" starttime="20221004 16:02:23.420" endtime="20221004 16:02:25.534"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:02:20.473" endtime="20221004 16:02:25.537">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</status>
+</test>
+<test id="s1-s1-s1-t6" name="compleate_login" line="13">
+<kw name="start" library="start_stop" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${demoshow_loginpage}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221004 16:02:25.558" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<msg timestamp="20221004 16:02:30.369" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<msg timestamp="20221004 16:02:30.382" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<status status="FAIL" starttime="20221004 16:02:25.557" endtime="20221004 16:02:30.388"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20221004 16:02:30.389" endtime="20221004 16:02:30.389"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:02:25.556" endtime="20221004 16:02:30.391"/>
+</kw>
+<kw name="stop" library="start_stop" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221004 16:02:30.393" endtime="20221004 16:02:32.464"/>
+</kw>
+<status status="PASS" starttime="20221004 16:02:30.392" endtime="20221004 16:02:32.465"/>
+</kw>
+<status status="FAIL" starttime="20221004 16:02:25.550" endtime="20221004 16:02:32.466">Setup failed:
+WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=105.0.5195.127)
+</status>
+</test>
+<status status="FAIL" starttime="20221004 16:01:31.280" endtime="20221004 16:02:32.469"/>
+</suite>
+<status status="FAIL" starttime="20221004 16:01:31.277" endtime="20221004 16:02:32.473"/>
+</suite>
+<status status="FAIL" starttime="20221004 16:01:31.249" endtime="20221004 16:02:32.480"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="Webtesting Automation">Webtesting Automation</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1" name="Testcases">Webtesting Automation.Testcases</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1-s1" name="Logincredentialtest">Webtesting Automation.Testcases.Logincredentialtest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221004 16:01:40.648" level="WARN">Multiple tests with name 'compleate_login' executed in suite 'Webtesting Automation.Testcases.Logincredentialtest'.</msg>
+<msg timestamp="20221004 16:02:07.553" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<msg timestamp="20221004 16:02:09.665" level="WARN">Multiple tests with name 'compleate_login' executed in suite 'Webtesting Automation.Testcases.Logincredentialtest'.</msg>
+<msg timestamp="20221004 16:02:13.213" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<msg timestamp="20221004 16:02:15.356" level="WARN">Multiple tests with name 'compleate_login' executed in suite 'Webtesting Automation.Testcases.Logincredentialtest'.</msg>
+<msg timestamp="20221004 16:02:18.335" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<msg timestamp="20221004 16:02:20.472" level="WARN">Multiple tests with name 'compleate_login' executed in suite 'Webtesting Automation.Testcases.Logincredentialtest'.</msg>
+<msg timestamp="20221004 16:02:23.398" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<msg timestamp="20221004 16:02:25.548" level="WARN">Multiple tests with name 'compleate_login' executed in suite 'Webtesting Automation.Testcases.Logincredentialtest'.</msg>
+<msg timestamp="20221004 16:02:30.369" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+</msg>
+</errors>
+</robot>
