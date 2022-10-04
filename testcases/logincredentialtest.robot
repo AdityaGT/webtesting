@@ -19,7 +19,7 @@ complete_login
     Input Text    ${enter_password}    ${password}
     Click Element    ${loginpage_login_button}
     Sleep    1s
-    Element Should Contain     ${error_update}    ${error_message}
-    
+    #Element Should Contain     ${error_update}    ${error_message}
+    Page Should Contain    ${error_message}
 
     
